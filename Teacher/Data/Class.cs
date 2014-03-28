@@ -9,8 +9,9 @@ namespace Teacher.Data
     
     class Class
     {
-        List<Student> studentList= new List<Student>();
-        String name;
-        DateTime time;
+       private List<Student> studentList= new List<Student>();
+       private String name;
+       private DateTime time;
+       private Notiz msg;
     }
 }

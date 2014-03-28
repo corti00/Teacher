@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Teacher.Data
 {
-    class Statistic : SetStatisticValue
+    class Notiz
     {
+        private DateTime time;
+        private String msg;
     }
 }
