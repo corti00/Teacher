@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Teacher.Data
 {
     class Student
@@ -11,5 +12,8 @@ namespace Teacher.Data
         string firstname;
         string secondname;
         Statistic statistic;
+
+       
+        }
     }
 }

@@ -102,10 +102,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Folder Include="Logic\" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -116,6 +112,8 @@
     <Compile Include="Data\Student.cs" />
     <Compile Include="Data\Timetable.cs" />
     <Compile Include="abstractclasses\AStatistic.cs" />
+    <Compile Include="Data\Variables.cs" />
+    <Compile Include="Logic\SaveManager.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -125,6 +123,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="packages.config" />
     <None Include="Teacher_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +141,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Polenter.SharpSerializer.Portable">
+      <HintPath>..\packages\SharpSerializer.2.20\lib\portable-net4+sl4+wp+windows8+xbox\Polenter.SharpSerializer.Portable.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
